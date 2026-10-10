@@ -1,0 +1,238 @@
+/* Stylizes the main content to look a bit like a card. I made it so it's centered in the middle of the body, and curved the edges as well, in addition of setting
+the backgrount to white. */
+main {
+    background-color: #ffffff;
+    width: 80%;
+    height: 70%;
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 25px;
+}
+
+/* Stylizes the background of the background to be a very dark blue I liked. */
+body {
+    background-color: #111625;
+}
+
+/* Whenever you are on a page, the link in the navigation bar that takes you to this page will have red text with a white background. */
+#home-page .nav-home,
+#about-page .nav-about,
+#contact-page .nav-contact {
+    color: #c8102e;
+    background-color: #ffffff;
+}
+
+/* If the navigation links haven't been visited yet, the links in the navigation bar will have a dark blue background with white text. This also sets the baseline
+the baseline shape for the navigation bar links in general. */
+.nav-home:link,
+.nav-about:link,
+.nav-contact:link {
+    font-family: 'Avenir', sans-serif;
+    display: inline-block;
+    text-decoration: none;
+    padding: 15px;
+    margin: 0px;
+    border: 0.5px;
+    border-color: #111625;
+    border-radius: 15px;
+    color: #ffffff;
+    background-color: #111625;
+}
+
+/* If the navigation links have been visited already, the the links in the navigation bar will look exactly the same as when they weren't visited yet, to keep them looking
+like a nav bar instead of links. */
+.nav-home:visited,
+.nav-about:visited,
+.nav-contact:visited {
+    font-family: 'Avenir', sans-serif;
+    display: inline-block;
+    text-decoration: none;
+    padding: 15px;
+    margin: 0px;
+    border: 0.5px;
+    border-color: #111625;
+    border-radius: 15px;
+    color: #ffffff;
+    background-color: #111625;
+}
+
+/* If the user hovers over the nav bar links, the text will change color to a flashy yellow color while keeping the size and shape the same. */
+.nav-home:hover,
+.nav-about:hover,
+.nav-contact:hover {
+    font-family: 'Avenir', sans-serif;
+    display: inline-block;
+    text-decoration: none;
+    padding: 15px;
+    margin: 0px;
+    border: 0.5px;
+    border-color: #111625;
+    border-radius: 15px;
+    color: #f2Ce4e;
+    background-color: #111625;
+}
+
+/* This formats all the images in the website to be block. This way I can align them to the center using auto values for the margins on the size. I also tried to
+standarize the width among the pictures, but some of them would grow too tall, so I implemented a max-height as well. */
+img {
+    display: block;
+    max-height: 800px;
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Here I'm formatting the figure element itself, to allow a bit of space for the figcaption, since I saw the next line getting to close to it for my liking. */
+figure {
+    margin-bottom: 10px;
+}
+
+/* Here I'm formatting the text of the figcaption to have that same dark blue color with an Avenir font, sans-serif fallback, a font weight of 10px
+and align it to the center. */
+figcaption {
+    color: #111625;
+    font-family: 'Avenir', sans-serif;
+    font-weight: 10px;
+    text-align: center;
+}
+
+/* This formats the embedded videos in the website. It sets these videos to block elements so we can align them to the center using the auto values on the side margins.
+I put a width value of 85% to stop the video from easily exceeding the sides of main when reducing the size of the browser, however to stop the iframe from
+stretching too much in full screen, I set a max-width value as well. */
+iframe {
+    display: block;
+    width: 85%;
+    max-width: 848px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Here I'm formatting the h1 elements to be centered, have a strong red color, have a big text size, and have a playful Chalkboard font with a sans-serif fallback. */
+h1 {
+    color: #c8102e;
+    font-size: 40px;
+    font-family: 'Chalkboard', sans-serif;
+    text-align: center;
+}
+
+/* Here I'm formatting the h2 elements to be centered, and in general follow the same formatting and styling conventions as h1, except, I made it a bit smaller since it's
+a subtitile */
+h2 {
+    color: #c8102e;
+    font-size: 30px;
+    font-family: 'Chalkboard', sans-serif;
+    text-align: center;
+}
+
+/* Again h3 follows the same conventions as h1 and h2 in general, but this one is even smaller than h2, since it's a subtitle of the subtitle so to speak. */
+h3 {
+    color: #c8102e;
+    font-size: 20px;
+    font-family: 'Avenir Black', sans-serif;
+}
+
+/* Here I'm formatting the list items to have a red color, the text in the list items will be styled more in depth in the paragraph section and the header sections,
+this was mainly done for the bullet points. */
+li {
+    color: #c8102e;
+}
+
+/* This one also formats list items, but specifically those that are in the contact-me-page, since the text here is a different color than the list items in the other pages. */
+.contact-list {
+    color: #111625;
+}
+
+/* This formats the text specifically belonging to the labels to follow the same conventions as that of the paragraph elements, having an Avenir font, a 10px font weight
+and that same deep, dark blue. */
+label {
+    font-family: 'Avenir', sans-serif;
+    font-weight: 10px;
+    color: #111625;
+}
+
+/* This formats the paragraph elements inside the main section. This paragraph has an Avenir font, a 10px font weight, and that same deep, blue color, contrasting with
+the white background of the main section. */
+main p {
+    font-family: 'Avenir', sans-serif;
+    font-weight: 10px;
+    color: #111625;
+}
+
+/* This formats the paragraph elements in the footer specifically since it lies in the blue background, meaning it has to have a white text color to be legible.
+I also kind of spaced out the paragraph elements sideways using the margins, and made the paragraphs sit side by side in one line by turning them into inline-block
+elements. */
+footer p {
+    display: inline-block;
+    font-family: 'Avenir', sans-serif;
+    font-weight: 10px;
+    color: #ffffff;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+/* Formats the anchor element in the footer to ge a gold color when not visited yet. */
+footer a:link {
+    color: #f2Ce4e;
+}
+
+/* Formats the anchor element in the footer to be styled to white when it has been visited already. */
+footer a:visited {
+    color: #ffffff;
+}
+
+/* Formats the anchor element in the footer to turn red when hovered over. */
+footer a:hover {
+    color: #c8102e;
+}
+
+/* Formats the links in the main section to be red when not visited yet. */
+main a:link {
+    color: #c8102e;
+}
+
+/* Formats the links in the main section to turn to an olive green when visited. */
+main a:visited {
+    color: #4A6B53;
+}
+
+/* Formats the links in the body to turn to dark blue when hovered over. */
+main a:hover {
+    color: #111625;
+}
+
+/* This is used to format the input and labels together to turn them into block elements that are in different lines from each other so it looks better. */
+.input-and-label {
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* This formats the button in the contact-me-page to be that same dark blue, with white text. The button was too small for my liking originally, so I also resized it
+and rounded the edges. */
+button {
+    font-family: 'Avenir', sans-serif;
+    font-size: 20px;
+    display: inline-block;
+    border: 25px;
+    border-color: #111625;
+    border-radius: 5px;
+    color: #ffffff;
+    background-color: #111625;
+    width: 100px;
+    height: 50px;
+}
+
+/* The button format for when the cursor hovers over it, is essentially the same, the only difference is that the text turns to gold, to signify it's an interactive element. */
+button:hover {
+    font-family: 'Avenir', sans-serif;
+    font-size: 20px;
+    display: inline-block;
+    border: 25px;
+    border-color: #111625;
+    border-radius: 5px;
+    color: #f2Ce4e;
+    background-color: #111625;
+    width: 100px;
+    height: 50px;
+}

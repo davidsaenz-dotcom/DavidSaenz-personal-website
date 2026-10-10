@@ -8,7 +8,7 @@
     <title>Document</title>
 </head>
 
-<body>
+<body id="contact-page">
     <!--The header section of a webpage holds all of a website's introductory info, that is why the nav bar is placed there.-->
     <header>
         <!--This <nav> tag is used to organize many hyperlink elements.
@@ -16,9 +16,9 @@
         <nav>
             <ul>
                 <!--All these links are connected to my other web pages-->
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about-me-page.html">About Me</a></li>
-                <li><a href="contact-me-page.html">Contact Me</a></li>
+                <a href="index.html" class="nav-home">Home</a>
+                <a href="about-me-page.html" class="nav-about">About Me</a>
+                <a href="contact-me-page.html" class="nav-contact">Contact Me</a>
             </ul>
         </nav>
     </header>
@@ -30,9 +30,9 @@
         <!--The first section is pretty simple, I just state what my preferred ways of contact are and link them.-->
         <section>
             <h2>Preffered Ways of Contacting</h2>
-            <p>I have to main ways of contacting people:</p>
+            <p>I have two main ways of contacting people:</p>
             <ul>
-                <li>
+                <li class="contact-list">
                     <!--This paragraph element however's pretty important. I researched how I could link a new email draft to a section of it. I use the anchor element
                         with the keyword mailto: followed by my email. This keyword sends the user to a new draft in their preferred email app, with my email as the
                         recipient of the draft.-->
@@ -40,7 +40,7 @@
                         <a href="mailto:david_saenz@s.thevillageschool.com">david_saenz@s.thevillageschool.com</a>
                     </p>
                 </li>
-                <li>
+                <li class="contact-list">
                     <!--This other paragraph element is also very interesting because I link a section of it to my whatsapp account using the https://wa.me/ address, followed
                         by my number. This opens a chat on the user's end with my whatsapp.-->
                     <p>Or whatsapp for everything else: <a href="https://wa.me/13467472430">+1 (346) 747-2430</a></p>
@@ -54,28 +54,43 @@
             <!--The <form> element itself was created as a container element that holds a bunch of user input elements to submit them all together for the backend of the
                 website to take care of.-->
             <form>
-                <!--The <label> element acts as a literal label for another element, which is linked through it's id using the for attribute.-->
-                <label for="subject-input">Subject:</label>
-                <!--The <input> element with a type text, will create a text field the user can type in. It has its limitations though, since this text field only spans
+                <!--This division is purely stylistic, it'll help me put all these elements in order.-->
+                <div class="input-and-label">
+                    <!--The <label> element acts as a literal label for another element, which is linked through it's id using the for attribute.-->
+                    <label for="subject-input">Subject:</label>
+                    <!--The <input> element with a type text, will create a text field the user can type in. It has its limitations though, since this text field only spans
                     one line.-->
-                <input type="text" id="subject-input" name="subject-input">
-                <label for="message-input">Message:</label>
-                <!--The <textarea> element creates a bigger text field where the user can type in some input. This field can hold a very large amount of characters. You can
+                    <input type="text" id="subject-input" name="subject-input">
+                </div>
+
+                <div class="input-and-label">
+                    <label for="message-input">Message:</label>
+                    <!--The <textarea> element creates a bigger text field where the user can type in some input. This field can hold a very large amount of characters. You can
                     set its default size using the cols and rows attributes, but the field can be resized manually by the user, and if the text exceeds the edge of the fields,
                     a scroller bar will appear. The placeholder attribute, is what makes the little note inside the text field possible.-->
-                <textarea cols=60 rows=10 id="message-input" name="message-input"
-                    placeholder="Type your message here..."></textarea>
+                    <textarea cols=60 rows=10 id="message-input" name="message-input"
+                        placeholder="Type your message here..."></textarea>
+                </div>
+
                 <!--This next little subsection is part of the form section, but holds some radio buttons that allow for one option to be selected.-->
                 <p>Choose a contact reason:</p>
                 <!--Radio buttons are actually <input> elements with a type radio. The name attribute, tells the program what group of radio buttons are grouped together.
                 The id attribute however is the identifier of the individual radio button. The value attribute refers to the signal the webpage sends to the javascript
                 when this radio button is selected and the form is sent.-->
-                <input type="radio" id="school-related" name="contact-reasons" value="school">
-                <label for="school-related">School-related</label>
-                <input type="radio" id="job-opportunities" name="contact-reasons" value="job">
-                <label for="job-opportunities">Job/Internship Opportunities</label>
-                <input type="radio" id="other-reason" name="contact-reasons" value="other">
-                <label for="other-reason">Other...</label>
+                <div class="input-and-label">
+                    <input type="radio" id="school-related" name="contact-reasons" value="school">
+                    <label for="school-related">School-related</label>
+                </div>
+
+                <div class="input-and-label">
+                    <input type="radio" id="job-opportunities" name="contact-reasons" value="job">
+                    <label for="job-opportunities">Job/Internship Opportunities</label>
+                </div>
+
+                <div class="input-and-label">
+                    <input type="radio" id="other-reason" name="contact-reasons" value="other">
+                    <label for="other-reason">Other...</label>
+                </div>
                 <!--A button with type submit inside a form container, basically tells the form that you are done adding information to the form, and that it can now pass
                     the information to the backend for processing. When this button is pressed, the whole webpage will reload and the form contents will be reset.-->
                 <button type="submit">Send</button>
