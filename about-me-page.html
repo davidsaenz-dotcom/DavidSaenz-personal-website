@@ -1,126 +1,237 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+    <link rel="stylesheet" href="styles.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
+    <!--The header section of a webpage holds all of a website's introductory info, that is why the nav bar is placed there.-->
+    <header>
         <!--This <nav> tag is used to organize many hyperlink elements.
         I am using it to organize my main navigation bar.-->
-    <nav>
-        <ul>
-            <!--All these links are connected to my other web pages-->
-            <li><a href="home-page.html">Home</a></li>
-            <li><a href="about-me-page.html">About Me</a></li>
-            <li><a href="contact-me-page.html">Contact Me</a></li>
-        </ul>
-    </nav>
+        <nav>
+            <ul>
+                <!--All these links are connected to my other web pages-->
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about-me-page.html">About Me</a></li>
+                <li><a href="contact-me-page.html">Contact Me</a></li>
+            </ul>
+        </nav>
+    </header>
 
+    <!--My main again will hold all of my main content. The nav bar is excluded from the main section because it isn't part of the core content.-->
     <main>
+        <!--Here I'm keeping the title separated from any section because it's just kind of a standalone element, with everything grouping together after it.-->
         <h1>A little bit about me...</h1>
 
+        <!--In this section I have a subtitle using the <h2> element, an image of an engineer, and another short paragraph about my hopes and dreams.-->
         <section>
             <h2>My Passion</h2>
-            <img src="https://engineeringonline.ucr.edu/blog/best-mechanical-engineering-companies-to-work-for/media_1311320627a8ec0abd8b6bd93bba3aa930a933276.jpg"
-            alt="An image of a mechanical engineer working on an aircraft engine">
+            <figure>
+                <img src="https://engineeringonline.ucr.edu/blog/best-mechanical-engineering-companies-to-work-for/media_1311320627a8ec0abd8b6bd93bba3aa930a933276.jpg"
+                    alt="An image of a mechanical engineer working on an aircraft engine.">
+                <figcaption>This is an image of a Switch 2 console like the one I play on.</figcaption>
+            </figure>
             <p>
-                Ever since I was a little boy, I've been very curious about how things worked around me. I loved to fix stuff, dissassemble what I could, and figure out what made it tick.
-                This is where my dream of becoming an enginner was born. In Ecuador, I started pursuing this dream by following a robotics course from a robotics school called Robotic Minds.
-                That is where I started learning everything I needed to become an engineer one day. I started to learn programmmin on Arduinos and built bots for many different challenges. 
-                When we moved here to the US, I had the opportunity to further follow my dream by following the Computer Science diploma at my school. Another big reason why I want to become
-                an engineer is my dad. He's an engineer as well and has engrained that itch to fix and automate fixes to problems. My parents both engrained that curiosity in me. This is why I
+                Ever since I was a little boy, I've been very curious about how things worked around me. I loved to fix
+                stuff, dissassemble what I could, and figure out what made it tick.
+                This is where my dream of becoming an enginner was born. In Ecuador, I started pursuing this dream by
+                following a robotics course from a robotics school called Robotic Minds.
+                That is where I started learning everything I needed to become an engineer one day. I started to learn
+                programmmin on Arduinos and built bots for many different challenges.
+                When we moved here to the US, I had the opportunity to further follow my dream by following the Computer
+                Science diploma at my school. Another big reason why I want to become
+                an engineer is my dad. He's an engineer as well and has engrained that itch to fix and automate fixes to
+                problems. My parents both engrained that curiosity in me. This is why I
                 am so sure that being an engineer is what I want to do.
             </p>
         </section>
+        <!--<hr> is an element that provides a horizontal line break. It is perfect to separate sections of content.-->
         <hr>
+        <!--This section talks about my hobbies, and what I like to do when I'm not busy.-->
         <section>
             <h2>Hobbies</h2>
+            <!--Here I made an unordered list using the <ul> element holding sections of my individual hobbies in list items using the <li> element.-->
             <ul>
                 <li>
+                    <!--This section will be about my hobby of gaming. I used an <h3> element as a subtitle for this section, attached images, embedded videos, and wrote
+                        little messages about each.-->
                     <h3>Videogames</h3>
                     <figure>
-                        <img src="https://assets.nintendo.com/image/upload/v1743547392/ccb3e8ca3c296e21a8c933e8369031511589d0ef6b079cf5bb3667b09893482c/Global%20Nav/Explore/Nintendo-Switch-2.png" 
-                        alt="This is an image of the Nintendo Switch 2 console.">
+                        <img src="https://assets.nintendo.com/image/upload/v1743547392/ccb3e8ca3c296e21a8c933e8369031511589d0ef6b079cf5bb3667b09893482c/Global%20Nav/Explore/Nintendo-Switch-2.png"
+                            alt="This is an image of the Nintendo Switch 2 console.">
                         <figcaption>This is an image of a Switch 2 console like the one I play on.</figcaption>
                     </figure>
-                    <p>I am a very big videogame fan, especially console games. I like to play games like The Legend of Zelda: Breath of the Wild or competitive games like Pokemon or Rocket League on my Switch 2.</p>
+                    <p>
+                        I am a very big videogame fan, especially console games. I like to play games like The Legend of
+                        Zelda: Breath of the Wild or competitive games like Pokemon or Rocket League on my Switch 2.
+                    </p>
+                    <!--Here I created another sublist for the specific videogames I like, writing about them and embedding a youtube trailer of them using the <iframe> element
+                        made specifically for attaching videos of video hosters like YouTube or Vimeo.-->
                     <ul>
+                        <!--This section was dedicated to Breath of the Wild-->
                         <li>
                             <h3>Breath of the Wild Trailer</h3>
-                            <iframe width="828" height="475" src="https://www.youtube.com/embed/zw47_q9wbBE" title="The Legend of Zelda: Breath of the Wild - Nintendo Switch Presentation 2017 Trailer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            <iframe width="828" height="475" src="https://www.youtube.com/embed/zw47_q9wbBE"
+                                title="The Legend of Zelda: Breath of the Wild - Nintendo Switch Presentation 2017 Trailer"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                         </li>
+                        <!--This section was dedicated to Pokemon Champions-->
                         <li>
                             <h3>Pokemon Champions Infommercial</h3>
-                            <iframe width="828" height="475" src="https://www.youtube.com/embed/pOfW-qdsvpU" title="Pokémon Champions – Overview Trailer – Nintendo Switch" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            <iframe width="828" height="475" src="https://www.youtube.com/embed/pOfW-qdsvpU"
+                                title="Pokémon Champions – Overview Trailer – Nintendo Switch" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            <!--Here I added another <p> element, but embedded a link in it using the <a> element, which allows you to link other websites using their URL-->
+                            <p>
+                                *Note: Since there isn't a laptop version of Pokemon Champions,
+                                I like to play a fanmade online pokemon battle simulator called
+                                <a href="https://pokemonshowdown.com">Pokemon Showdown</a>
+                                when I don't have my phone or Switch handy.
+                            </p>
                         </li>
                     </ul>
                 </li>
                 <li>
+                    <!--This section will be about my hobby of reading. I used an <h3> element as a subtitle for this section, attached images, wrote
+                        a bit about them, and added a menu with a bunch of different books to choose from.-->
                     <h3>Reading</h3>
                     <figure>
-                        <img src="https://www.wtsbooks.com/cdn/shop/products/faa7a1d6af9c25d980432c0b2cea5c04.jpg" 
-                        alt="This is an image of the book North! Or Be Eaten from the Wingfeather Saga by Andrew Peterson.">
-                        <figcaption>This is an image of the North! Or Be Eaten book of the Wingfeather Saga, which is the book saga I'm currently reading and the book I'm currently on.</figcaption>
+                        <img src="https://www.wtsbooks.com/cdn/shop/products/faa7a1d6af9c25d980432c0b2cea5c04.jpg"
+                            alt="This is an image of the book North! Or Be Eaten from the Wingfeather Saga by Andrew Peterson.">
+                        <figcaption>This is an image of the North! Or Be Eaten book of the Wingfeather Saga, which is
+                            the book saga I'm currently reading and the book I'm currently on.</figcaption>
                     </figure>
-                    <p>Reading is another hobby I really enjoy, my favorite books are usually fantasy, adventure or very early science fiction like Jules Verne.</p>
+                    <p>Reading is another hobby I really enjoy, my favorite books are usually fantasy, adventure or very
+                        early science fiction like Jules Verne.</p>
+                    <!--This is where I made my menu using the <select> element for the actual menu, the <label> element to provide a label for the menu,
+                        and the <option> element to create the elements of the menu.-->
                     <label for="books">Choose a book to explore:</label>
                     <select name="books" id="books">
                         <option value="center-of-the-earth">Journey to the Center of the Earth by Jules Verne</option>
-                        <option value="narnia">The Chronicles of Narnia: The Lion, the Witch, and the Wardrobe by C.S. Lewis</option>
-                        <option value="wingfeather">The Wingfeather Saga: North! Or Be Eathen by Andrew Peterson</option>
+                        <option value="narnia">The Chronicles of Narnia: The Lion, the Witch, and the Wardrobe by C.S.
+                            Lewis</option>
+                        <option value="wingfeather">The Wingfeather Saga: North! Or Be Eathen by Andrew Peterson
+                        </option>
                         <option value="soledad">Cien Años de Soledad by Gabriel García Marquez</option>
                     </select>
                 </li>
                 <li>
+                    <!--This section will be about my hobby of mountain biking. I used an <h3> element as a subtitle for this section, attached an image and wrote
+                        a short paragraph about why I like mountain biking-->
                     <h3>Mountain Biking</h3>
                     <figure>
-                        <img src="https://www.wtsbooks.com/cdn/shop/products/faa7a1d6af9c25d980432c0b2cea5c04.jpg" 
-                        alt="This is an image of the book North! Or Be Eaten from the Wingfeather Saga by Andrew Peterson.">
-                        <figcaption>This is an image of the North! Or Be Eaten book from the Wingfeather Saga, which is the book saga I'm currently reading and the book I'm currently on.</figcaption>
+                        <img src="https://www.visitgolden.com/wp-content/uploads/2026/02/F4DStudio_GabrielRovick_VisitGolden_MTB-01105_26AD13AD-5056-A36A-097D30F076DE4EFA-26acfc285056a36_26ad1cb7-5056-a36a-095b1cedac15bb0e-scaled-e1787157057639.jpg"
+                            alt="This is an image of two people riding their bikes on a forest trail.">
+                        <figcaption>This is an image of two people riding their bikes on a forest trail, which I like to
+                            do with my family.</figcaption>
                     </figure>
                     <p>
-                        Back when I was in Ecuador, we lived close to a walking nature trail called Chaquiñan. 
-                        Me and my family would go biking on this trail almost every weekend. It is from here that I developed my love for cycling, specifically, mountain biking.
+                        Back when I was in Ecuador, we lived close to a walking nature trail called Chaquiñan.
+                        Me and my family would go biking on this trail almost every weekend. It is from here that I
+                        developed my love for cycling, specifically, mountain biking.
                     </p>
                 </li>
                 <li>
+                    <!--This section will be about my hobby of swimming. I used an <h3> element as a subtitle for this section, attached an image and wrote
+                        a short paragraph about why I like swimming-->
                     <h3>Swimming</h3>
                     <figure>
-                        <img src="https://i0.wp.com/blog.myswimpro.com/wp-content/uploads/2023/10/freestyle-stroke-breathing-technique-myswimpro.jpeg" 
-                        alt="This is an image of a professional swimmer while swimming.">
+                        <img src="https://i0.wp.com/blog.myswimpro.com/wp-content/uploads/2023/10/freestyle-stroke-breathing-technique-myswimpro.jpeg"
+                            alt="This is an image of a professional swimmer while swimming.">
                         <figcaption>The person in the image is a professional swimmer mid-swim.</figcaption>
                     </figure>
                     <p>
-                        I really love swimming because it is a sport that I have practiced since I was little. 
-                        I had started back in Ecuador and continued it here in the US at my new school. I've used what I learned in swimming to expand out into water polo as well.
+                        I really love swimming because it is a sport that I have practiced since I was little.
+                        I had started back in Ecuador and continued it here in the US at my new school. I've used what I
+                        learned in swimming to expand out into water polo as well.
                     </p>
                 </li>
                 <li>
+                    <!--This section will be about my hobby of watching TV. I used an <h3> element as a subtitle for this section, attached an image,
+                        embedded videos about the shows or films I'm talking about, and wrote a short paragraph about what I like.-->
                     <h3>Watching TV</h3>
                     <figure>
-                        <img src="https://i0.wp.com/blog.myswimpro.com/wp-content/uploads/2023/10/freestyle-stroke-breathing-technique-myswimpro.jpeg" 
-                        alt="This is an image of a professional swimmer while swimming.">
-                        <figcaption>The person in the image is a professional swimmer mid-swim.</figcaption>
+                        <img src="https://www.finaldraft.com/media/amasty/blog/cache/1/6/940/660/1658-1024x640-2.png"
+                            alt="There are two people in the image, vader and luke. You can only see their silhouette as they stand in a dark room with their lightsabers drawn mid-duel.">
+                        <figcaption>This image is an iconic frame from The Empire Strikes Back, during Luke's duel with
+                            Vader on Cloud City</figcaption>
                     </figure>
                     <p>
-                        Watching TV is another really big hobby for me. I am a big fan of Star Wars and Marvel in particular and prefer to watch TV shows that have a lot of character
-                        development. My favorite show is Star Wars: The Clone Wars, and my favorite movies are the prequels from Star Wars as well.
+                        Watching TV is another really big hobby for me. I am a big fan of Star Wars and Marvel in
+                        particular and prefer to watch TV shows that have a lot of character
+                        development. My favorite show is Star Wars: The Clone Wars, and my favorite movies are the
+                        prequels from Star Wars as well.
                     </p>
+
+                    <!--Here I used the same technique as for the videogames section to embed the trailer of my favorite movie and my favorite show. I made a list, and
+                        made a list item for each of them. I then proceeded to embed the trailer using an iframe again.-->
+                    <ul>
+                        <li>
+                            <!--This one was dedicated to my favorite show-->
+                            <h3>The Clone Wars Trailer</h3>
+                            <iframe width="828" height="475" src="https://www.youtube.com/embed/ZLW2jkd6E7g"
+                                title="Star Wars: The Clone Wars | Official Trailer | Disney+" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </li>
+                        <li>
+                            <!--This one was dedicated to my favorite movie-->
+                            <h3>Revenge of the Sith Trailer</h3>
+                            <iframe width="828" height="475" src="https://www.youtube.com/embed/5UnjrG_N8hU"
+                                title="Star Wars Episode III: Revenge of the Sith - Trailer" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </li>
+                    </ul>
                 </li>
             </ul>
         </section>
+        <!--Here I added another section break-->
         <hr>
+        <!--For the final section of the About Me page, I decided to write a brief history of my life travelling around the world. I embedded another picture using the
+            figure element and wrote a paragraph of the places I've moved to.-->
         <section>
             <h2>A Brief History of Where I've Lived</h2>
+
+            <figure>
+                <img src="https://m.media-amazon.com/images/I/816BF49VQVL.jpg"
+                    alt="The image depicts a glowing globe sitting on a desk.">
+                <figcaption>This is an image of a glowing globe, representing how I've lived in many places around the
+                    world.</figcaption>
+            </figure>
+
             <p>
-                My dad works in a company dedicated to providing energy technology and energy services to energy companies around the world. 
-                This is the reason why we've moved so much between countries. My parents had been moving even before I was born but I will start from my home country, Ecuador. 
-                Me, my parents, and my brother were all born in Ecuador. My first move happened when I was four years old. My dad's company had moved us to Houston for almost 2 years. 
-                We then moved back to Ecuador where we stayed for about a year before being moved to Colombia, Bogotá. We stayed there for almost 2 years again, when we then came back to Ecuador again. 
+                My dad works in a company dedicated to providing energy technology and energy services to energy
+                companies around the world.
+                This is the reason why we've moved so much between countries. My parents had been moving even before I
+                was born but I will start from my home country, Ecuador.
+                Me, my parents, and my brother were all born in Ecuador. My first move happened when I was four years
+                old. My dad's company had moved us to Houston for almost 2 years.
+                We then moved back to Ecuador where we stayed for about a year before being moved to Colombia, Bogotá.
+                We stayed there for almost 2 years again, when we then came back to Ecuador again.
                 This time we stayed in Ecuador for 6 years before moving back to Houston from then to the present.
             </p>
         </section>
     </main>
+
+    <!--The footer section was made to hold general website info as well as other resources. In my case I'm using it to declare the author,
+        the date last updated, and basic contact info.-->
+    <footer>
+        <!--Stating the author of the webpage-->
+        <p>Made by: David Sáenz</p>
+        <!--Stating the date last updated-->
+        <p>Last Updated: 10/9/2026</p>
+        <!--Stating some basic contact info-->
+        <p>Contact me at <a href="mailto:david_saenz@s.thevillageschool.com">david_saenz@s.thevillageschool.com</a></p>
+    </footer>
 </body>
+
 </html>

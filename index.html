@@ -1,42 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <link rel="stylesheet" href="styles.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home Page</title>
 </head>
-<body>
-    <!--This <nav> tag is used to organize many hyperlink elements.
-    I am using it to organize my main navigation bar.-->
-    <nav>
-        <ul>
-            <!--All these links are connected to my other web pages-->
-            <li><a href="home-page.html">Home</a></li>
-            <li><a href="about-me-page.html">About Me</a></li>
-            <li><a href="contact-me-page.html">Contact Me</a></li>
-        </ul>
-    </nav>
 
-    <!--The main section will have all of my webpage's main content-->
+<body>
+    <!--The header section of a webpage holds all of a website's introductory info, that is why the nav bar is placed there.-->
+    <header>
+        <!--This <nav> tag is used to organize many hyperlink elements.
+            I am using it to organize my main navigation bar.-->
+        <nav>
+            <ul>
+                <!--All these links are connected to my other web pages-->
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about-me-page.html">About Me</a></li>
+                <li><a href="contact-me-page.html">Contact Me</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!--The main section will have all of my webpage's main content, in this case my greeting, picture, and introduction.-->
     <main>
+        <!--First of all, I'm introducing myself in my home page placing a greeting in the title and attaching an image of myself using the <figure> element. The figure element
+            lets us attach an image to our page using the <img> element and attach a caption to it using the <figcaption> element.-->
         <section>
             <h1>Hello World! I am David Sáenz</h1>
             <figure>
-                <img src="my-image.jpeg" alt="A picture of David Sáenz wearing a red life vest in a boat on the Laguna de Cuicocha in Ecuador">
+                <img src="my-image.jpeg"
+                    alt="A picture of David Sáenz wearing a red life vest in a boat on the Laguna de Cuicocha in Ecuador">
                 <figcaption>A picture of me visiting the Laguna de Cuicocha in Ecuador.</figcaption>
             </figure>
         </section>
 
+        <!--The introduction section has a <p> element where I wrote a short introduction for my visitors to know who I am-->
         <section>
             <h2>Introduction</h2>
             <p>
-                Hello there! My name is David Sáenz and I am currently a 10th grader studying in the US. 
-                I am originally from Quito, the capital of Ecuador, but my dad's job makes us move from country to country. 
-                Currently, I am following the Computer Science and IB diploma at my school and that is how I got into Web Apps and made this webpage!
-                Even though I've travelled a lot, I am very proud of my origins, which is why I still speak Spanish and go on frequent trips back to Ecuador.
+                Hello there! My name is David Sáenz and I am currently a 10th grader studying in the US.
+                I am originally from Quito, the capital of Ecuador, but my dad's job makes us move from country to
+                country.
+                Currently, I am following the Computer Science and IB diploma at my school and that is how I got into
+                Web Apps and made this webpage!
+                Even though I've travelled a lot, I am very proud of my origins, which is why I still speak Spanish and
+                go on frequent trips back to Ecuador.
             </p>
         </section>
     </main>
+
+    <!--The footer section was made to hold general website info as well as other resources. In my case I'm using it to declare the author,
+        the date last updated, and basic contact info.-->
+    <footer>
+        <!--Stating the author of the webpage-->
+        <p>Made by: David Sáenz</p>
+        <!--Stating the date last updated-->
+        <p>Last Updated: 10/9/2026</p>
+        <!--Stating some basic contact info-->
+        <p>Contact me at <a href="mailto:david_saenz@s.thevillageschool.com">david_saenz@s.thevillageschool.com</a></p>
+    </footer>
 </body>
+
 </html>
